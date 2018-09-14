@@ -49,6 +49,7 @@ def analysis():
         key_tuple = (key_size[0][0],key_size[0][1],item)
         sequence_key.append(key_tuple)
     zipped = sorted(sequence_key, key=lambda s:s[0], reverse=True)
+    print(zipped)
     f = open(r'C:\Users\Administrator\Desktop\python\output.txt','a')
     for zipped_order in zipped:
         print(zipped_order)
